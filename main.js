@@ -129,18 +129,34 @@ let a = 1, b = 2;
 
 // console.log(evaluate());
 
-let animal = 'cat';
-// const likesWhale = animal === 'whale' ? true : false; // if animal equals whale then return true, else return false
-// console.log(likesWhale);
+// let animal = 'cat';
+// // const likesWhale = animal === 'whale' ? true : false; // if animal equals whale then return true, else return false
+// // console.log(likesWhale);
 
-switch(animal) {
-  case 'dog':
-    console.log('dog'); // if a case is dog then do this then exit
-    break
-  case 'whale':
-    console.log('whale'); // if not dog then do this then break
-    break 
-  default:
-    console.log('Neither'); // if neither of then then do this and break
-    break
-}
+// switch(animal) {
+//   case 'dog':
+//     console.log('dog'); // if a case is dog then do this then exit
+//     break
+//   case 'whale':
+//     console.log('whale'); // if not dog then do this then break
+//     break 
+//   default:
+//     console.log('Neither'); // if neither of then then do this and break
+//     break
+// }
+
+// DOM -Document Object Model
+
+// Single Element Selectors
+const list = document.querySelector('#list');
+const listItems = document.querySelectorAll('.list-item'); //only find the first that match to
+
+// listItems.forEach(item => {
+//   console.log(item.textContent);
+// })
+// console.log(listItems);
+
+// list.firstElementChild.remove();
+// list.firstElementChild.textContent = "New item"
+// list.firstElementChild.innerHTML = "<h1>New Item</h1>"
+list.lastElementChild.style.background = 'red'
