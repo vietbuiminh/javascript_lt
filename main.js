@@ -148,15 +148,22 @@ let a = 1, b = 2;
 // DOM -Document Object Model
 
 // Single Element Selectors
-const list = document.querySelector('#list');
-const listItems = document.querySelectorAll('.list-item'); //only find the first that match to
+// const list = document.querySelector('#list');
+// const listItems = document.querySelectorAll('.list-item'); //only find the first that match to
 
-// listItems.forEach(item => {
-//   console.log(item.textContent);
-// })
-// console.log(listItems);
+// // listItems.forEach(item => {
+// //   console.log(item.textContent);
+// // })
+// // console.log(listItems);
 
-// list.firstElementChild.remove();
-// list.firstElementChild.textContent = "New item"
-// list.firstElementChild.innerHTML = "<h1>New Item</h1>"
-list.lastElementChild.style.background = 'red'
+// // list.firstElementChild.remove();
+// // list.firstElementChild.textContent = "New item"
+// // list.firstElementChild.innerHTML = "<h1>New Item</h1>"
+// list.lastElementChild.style.background = 'red'
+
+//Events
+
+const btn = document.getElementById('myBtn');
+btn.addEventListener('mouseout', (e) => {
+  btn.style.background = 'blue';
+});
