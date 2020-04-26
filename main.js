@@ -17,16 +17,67 @@
 // console.log(pi);
 
 //String
-let name = 'Viet';
-let age = 17; //number literal
-let loveCats = true; //Boolean literal
-let color = null; //Null
+//let name = 'Viet';
+// let age = 17; //number literal
+// let loveCats = true; //Boolean literal
+// let color = null; //Null
 //let list = undefined; //undefind
-let list; //Same as undefind
+// let list; //Same as undefind
 
-console.log(list);
+//console.log(list);
 // console.log(name);
 
-name += ' Bui'; //same as name = name + ....
-let message = name + ' "is" ' + age //can use double or single quotation mark
-console.log(message);
+//name += ' Bui'; //same as name = name + ....
+//let message = `${name} is ${age}`; //--> this is modern way to use it //can use double or single quotation mark
+
+// age -= 5;
+
+// console.log(age);
+
+// Array Literals
+
+// const myArray = ['red', 4, true, null, [1, 2, 3]];
+
+// colors[4] = 'black';
+
+// colors.push('white');
+// let lastColors = colors.shift();
+// console.log(lastColors);
+// console.log(myArray);
+
+//Object Literals
+
+
+const people = [{
+  
+    firstName: 'Viet', 
+    lastName: 'Bui', 
+    age: 17,
+    pets: ['dog', 'cat'],
+    address: {
+      street: '123 Street',
+      city: 'Tacoma',
+      state: 'WA'
+    }
+  },
+  {
+    firstName: 'Huan', 
+    lastName: 'Nguyen', 
+    age: 17,
+    pets: ['dog', 'cat'],
+    address: {
+      street: '123 Street',
+      city: 'Tacoma',
+      state: 'WA'
+    }
+  }
+] 
+
+// person.email = 'vieetj@gmail.com';
+
+// delete person.age;
+
+// const { firstName, lastName, address: {city} } = person //pull stuff out of person
+const peopleJSON = JSON.stringify(people);
+
+console.log(JSON.parse(peopleJSON));
