@@ -1,3 +1,4 @@
 // Variable
 var color = 'red';
-console.log(color);
+let age = 30;
+console.log(age);
