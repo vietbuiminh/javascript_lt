@@ -48,36 +48,25 @@
 //Object Literals
 
 
-const people = [{
-  
-    firstName: 'Viet', 
-    lastName: 'Bui', 
-    age: 17,
-    pets: ['dog', 'cat'],
-    address: {
-      street: '123 Street',
-      city: 'Tacoma',
-      state: 'WA'
-    }
-  },
-  {
-    firstName: 'Huan', 
-    lastName: 'Nguyen', 
-    age: 17,
-    pets: ['dog', 'cat'],
-    address: {
-      street: '123 Street',
-      city: 'Tacoma',
-      state: 'WA'
-    }
-  }
-] 
+// Functions
 
-// person.email = 'vieetj@gmail.com';
+// function hello(firstName, lastName) {
+//   console.log(`Hello ${firstName} ${lastName}`);
+// }
 
-// delete person.age;
+// function convertPercent(num) {
+//   return num / 100;
+// }
 
-// const { firstName, lastName, address: {city} } = person //pull stuff out of person
-const peopleJSON = JSON.stringify(people);
+// console.log(convertPercent(100));
+// const convertPercent = (num) => num / 100; //shorter but not good for complicated algo
 
-console.log(JSON.parse(peopleJSON));
+// console.log(convertPercent(75));
+
+
+// Loops
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
